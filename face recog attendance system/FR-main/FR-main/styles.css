@@ -1,0 +1,251 @@
+/*Home page style*/
+h1{
+position: center;
+font-family: 'Lato','Helvetica Neue',Arial,sans-serif;
+font-weight: 500;
+font-size: 7em;
+letter-spacing: -0.01em;
+color: #FFFFFF;
+text-align: center;
+}
+body
+{
+position: relative;
+background: #42078f;
+background-position: center;
+margin: 0;
+padding: 0;
+height: 100vh;
+background-size: cover;
+background-repeat: no-repeat;
+overflow: hidden;
+justify-content:center;
+}
+
+/*nav bar*/
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+  font-family: 'segoe ui';
+}
+.nav {
+  height: 50px;
+  width: 100%;
+  background-color: #4d4d4d;
+  position: relative;
+}
+.nav > .nav-header {
+  display: inline;
+}
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+}
+.nav > .nav-btn {
+  display: none;
+}
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+/*end of nav bar*/
+.logoimg 
+{
+position: absolute;
+height: 500px;
+
+
+
+}
+/*signup*/
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #001432;
+  font-family: "lato", sans-serif;
+}
+.signupFrm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .form {
+    background-color: white;
+    width: 400px;
+    border-radius: 8px;
+    padding: 20px 40px;
+    box-shadow: 0 10px 25px rgba(148, 158, 167, 0.2);
+  }
+  
+  .title {
+    font-size: 50px;
+    margin-bottom: 50px;
+    color: rgb(103, 54, 136);
+  }
+  .inputContainer {
+    position: relative;
+    height: 45px;
+    width: 90%;
+    margin-bottom: 17px;
+  }
+  /* Style the inputs */
+
+.input {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #DADCE0;
+    border-radius: 7px;
+    font-size: 16px;
+    padding: 0 20px;
+    outline: none;
+    background: none;
+    z-index: 1;
+  }
+  
+  /* Hide the placeholder texts */
+  
+  ::placeholder {
+    color: transparent;
+  }
+  .label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 0 4px;
+    background-color: white;
+    color: #DADCE0;
+    font-size: 16px;
+    transition: 0.5s;
+    z-index: 0;
+  }
+  .dropdowndegree
+  {
+      position: relative;
+      font-size: 19px;
+      transition: 0.5s;
+      color : #616670
+  }
+  .submitBtn {
+    display: block;
+    margin-left: auto;
+    padding: 15px 30px;
+    border: none;
+    background-color: purple;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 30px;
+  }
+  
+  .submitBtn:hover {
+    background-color: #9867C5;
+    transform: translateY(-2px);
+  }
+  .input:focus + .label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+    color: purple;
+  }
+  .input:not(:placeholder-shown)+ .label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+
+  @media screen and (max-width:768px) {
+    h1{
+      position: center;
+      font-family: 'serif',arial;
+      font-size: 3em;
+      letter-spacing: -0.01em;
+      color: #FFFFFF;
+      text-align: center;
+      }
+.logoimg 
+{
+position: center;
+margin-top:  90px;
+height: 450px;
+padding-top: 90px;
+}
+
+
+  
+  }
